@@ -25,6 +25,10 @@
   line-height: 1;
 }
 
+.img {
+  width: 30px
+}
+
 .name {
   font-size: 1.7rem;
   font-weight: 600;
