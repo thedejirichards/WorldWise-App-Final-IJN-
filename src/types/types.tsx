@@ -15,3 +15,16 @@ export type CityListProp = {
     cities: CityProp[] | null,
     isLoading: boolean
 }
+export type CountryItemProp = {
+    country: {
+      country: string;
+      emoji: string;
+    }
+}
+
+export type ButtonProp = {
+  children: React.ReactNode
+  onClick?: (e: React.FormEvent)=> void
+  type: string
+}
+
