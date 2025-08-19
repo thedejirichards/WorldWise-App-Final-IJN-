@@ -35,6 +35,66 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
-    }
+    },
+    {
+    "cityName": "Toronto",
+    "country": "Canada",
+    "emoji": "CA",
+    "date": "2027-11-01T12:00:00.000Z",
+    "notes": "Canada's largest city and financial hub.",
+    "position": {
+      "lat": 43.65107,
+      "lng": -79.347015
+    },
+    "id": 101001
+  },
+  {
+    "cityName": "São Paulo",
+    "country": "Brazil",
+    "emoji": "BR",
+    "date": "2027-11-03T09:15:00.000Z",
+    "notes": "Brazil's largest city and economic powerhouse.",
+    "position": {
+      "lat": -23.55052,
+      "lng": -46.633308
+    },
+    "id": 102001
+  },
+  {
+    "cityName": "Accra",
+    "country": "Ghana",
+    "emoji": "GH",
+    "date": "2027-11-05T14:45:00.000Z",
+    "notes": "Capital city of Ghana, lively and coastal.",
+    "position": {
+      "lat": 5.603717,
+      "lng": -0.186964
+    },
+    "id": 103001
+  },
+  {
+    "cityName": "Abuja",
+    "country": "Nigeria",
+    "emoji": "NG",
+    "date": "2027-11-08T13:20:00.000Z",
+    "notes": "The capital city of Nigeria.",
+    "position": {
+      "lat": 9.05785,
+      "lng": 7.49508
+    },
+    "id": 104002
+  },
+  {
+    "cityName": "Lagos",
+    "country": "Nigeria",
+    "emoji": "NG",
+    "date": "2027-11-07T16:30:00.000Z",
+    "notes": "Nigeria's largest city and commercial hub.",
+    "position": {
+      "lat": 6.524379,
+      "lng": 3.379206
+    },
+    "id": 104001
+  }
   ]
 }
