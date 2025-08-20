@@ -33,6 +33,13 @@
   background-color: var(--color-dark--1);
 }
 
+:global(.leaflet-popup img) {
+  width: 20px
+}
+:global(.leaflet-popup .span) {
+  font-size: 15px;
+}
+
 :global(.leaflet-popup-content-wrapper) {
   border-left: 5px solid var(--color-brand--2);
 }
