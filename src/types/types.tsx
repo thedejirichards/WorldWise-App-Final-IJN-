@@ -46,3 +46,16 @@ export type CitiesContextProps = {
   setCurrentCity: React.Dispatch<React.SetStateAction<CityProp | null>>;
   getCity: (id: string) => void
 };
+
+export type ChangeCenterProps = {
+  position: string[];
+};
+
+
+export type useGeolocationProp = {
+  defaultPosition?: PositionProp | null
+}
+export type PositionProp = {
+  lat: number | string;
+  lng: number | string
+}
