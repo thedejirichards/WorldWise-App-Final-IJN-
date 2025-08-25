@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 
 import { createContext, useContext, useEffect, useState } from "react";
-import type { CitiesContextProps, CityProp } from "../types/types";
+import type { CitiesContextProps, CityProp, NewCityProp } from "../types/types";
 
 const CitiesContext = createContext<CitiesContextProps | null>(null);
 
@@ -40,6 +40,25 @@ function CitiesProvider({ children }: { children: React.ReactNode }) {
     }
 } 
 
+  const createCity = async(newCity: NewCityProp) => {
+    try{
+        setLoading(true)
+        const res = await fetch(`${BASE_URL}/cities`, {
+          method: "POST",
+          body: JSON.stringify(newCity),
+          headers: {
+            "Content-Type": "application/json",
+          }
+        })
+        const data = await res.json()
+        setCities((cities) => cities ? [...cities, data] : [data])
+    }catch(err){
+        throw new Error (`Error occured ${err}`)
+    }finally{
+        setLoading(false)
+    }
+} 
+
   return (
     <CitiesContext.Provider
       value={{
@@ -49,7 +68,8 @@ function CitiesProvider({ children }: { children: React.ReactNode }) {
         setLoading,
         currentCity, 
         setCurrentCity,
-        getCity
+        getCity,
+        createCity
       }}
     >
       {children}

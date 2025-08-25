@@ -44,18 +44,32 @@ export type CitiesContextProps = {
   setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   currentCity: CityProp | null;
   setCurrentCity: React.Dispatch<React.SetStateAction<CityProp | null>>;
-  getCity: (id: string) => void
+  getCity: (id: string) => void;
+  createCity: (newCity: NewCityProp) => void;
 };
 
 export type ChangeCenterProps = {
   position: string[];
 };
 
-
 export type useGeolocationProp = {
-  defaultPosition?: PositionProp | null
-}
+  defaultPosition?: PositionProp | null;
+};
 export type PositionProp = {
   lat: number | string;
-  lng: number | string
-}
+  lng: number | string;
+};
+
+export type NewCityProp = {
+  cityName: string;
+  country: string;
+  emoji: string;
+  date: string | Date;
+  notes: string;
+  position: {
+    lat: number | string |null;
+    lng: number | string | null;
+  };
+};
+
+
