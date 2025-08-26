@@ -39,11 +39,12 @@ export type CountryItemProp = {
 
 export type CitiesContextProps = {
   cities: CityProp[] | null;
-  setCities: React.Dispatch<React.SetStateAction<CityProp[] | null>>;
+  error: string;
+  // setCities: React.Dispatch<React.SetStateAction<CityProp[] | null>>;
   isLoading: boolean;
-  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+  // setLoading: React.Dispatch<React.SetStateAction<boolean>>;
   currentCity: CityProp | null;
-  setCurrentCity: React.Dispatch<React.SetStateAction<CityProp | null>>;
+  // setCurrentCity: React.Dispatch<React.SetStateAction<CityProp | null>>;
   getCity: (id: string) => void;
   createCity: (newCity: NewCityProp) => void;
   deleteCity: (id:string) => void;
@@ -73,4 +74,19 @@ export type NewCityProp = {
   };
 };
 
+
+export type CitiesStateProp = {
+  cities: CityProp[];
+  isLoading: boolean;
+  currentCity: CityProp | null;
+  error: string;
+};
+
+export type CitiesActionProp =
+  | { type: "loading" }
+  | { type: "cities/loaded"; payLoad: CityProp[] }
+  | { type: "city/loaded"; payLoad: CityProp }
+  | { type: "city/created"; payload: CityProp }
+  | { type: "city/deleted"; payload: string }
+  | { type: "rejected"; payLoad: string };
 

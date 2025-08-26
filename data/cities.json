@@ -37,40 +37,16 @@
       "id": "104001"
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "DE",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "id": "10cf",
+      "cityName": "Ouallam",
+      "country": "Niger (the)",
+      "emoji": "NE",
+      "date": "2025-08-26T08:38:05.054Z",
+      "notes": " n,m.",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
-      },
-      "id": "98443197"
-    },
-    {
-      "cityName": "São Paulo",
-      "country": "Brazil",
-      "emoji": "BR",
-      "date": "2027-11-03T09:15:00.000Z",
-      "notes": "Brazil's largest city and economic powerhouse.",
-      "position": {
-        "lat": -23.55052,
-        "lng": -46.633308
-      },
-      "id": "102001"
-    },
-    {
-      "cityName": "Accra",
-      "country": "Ghana",
-      "emoji": "GH",
-      "date": "2027-11-05T14:45:00.000Z",
-      "notes": "Capital city of Ghana, lively and coastal.",
-      "position": {
-        "lat": 5.603717,
-        "lng": -0.186964
-      },
-      "id": "103001"
+        "lat": "14.243086862716888",
+        "lng": "1.9335937500000002"
+      }
     }
   ]
 }
