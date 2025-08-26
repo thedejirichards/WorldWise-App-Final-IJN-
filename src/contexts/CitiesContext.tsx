@@ -51,9 +51,23 @@ function CitiesProvider({ children }: { children: React.ReactNode }) {
           }
         })
         const data = await res.json()
-        setCities((cities) => cities ? [...cities, data] : [data])
+        setCities((cities) => cities ? [data, ...cities] : [data])
     }catch(err){
-        throw new Error (`Error occured ${err}`)
+        throw new Error (`Error creating city ${err}`)
+    }finally{
+        setLoading(false)
+    }
+}
+
+  const deleteCity = async(id: string) => {
+    try{
+        setLoading(true)
+        await fetch(`${BASE_URL}/cities/${id}`, {
+          method: "DELETE"
+        })
+        setCities((cities) => cities? cities.filter(city=> city.id !== id): cities)
+    }catch(err){
+        throw new Error (`Error deleting city ${err}`)
     }finally{
         setLoading(false)
     }
@@ -69,7 +83,8 @@ function CitiesProvider({ children }: { children: React.ReactNode }) {
         currentCity, 
         setCurrentCity,
         getCity,
-        createCity
+        createCity,
+        deleteCity
       }}
     >
       {children}

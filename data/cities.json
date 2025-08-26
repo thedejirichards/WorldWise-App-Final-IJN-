@@ -25,6 +25,18 @@
       "id": "17806751"
     },
     {
+      "cityName": "Lagos",
+      "country": "Nigeria",
+      "emoji": "NG",
+      "date": "2027-11-07T16:30:00.000Z",
+      "notes": "Nigeria's largest city and commercial hub.",
+      "position": {
+        "lat": 6.524379,
+        "lng": 3.379206
+      },
+      "id": "104001"
+    },
+    {
       "cityName": "Berlin",
       "country": "Germany",
       "emoji": "DE",
@@ -59,102 +71,6 @@
         "lng": -0.186964
       },
       "id": "103001"
-    },
-    {
-      "cityName": "Lagos",
-      "country": "Nigeria",
-      "emoji": "NG",
-      "date": "2027-11-07T16:30:00.000Z",
-      "notes": "Nigeria's largest city and commercial hub.",
-      "position": {
-        "lat": 6.524379,
-        "lng": 3.379206
-      },
-      "id": "104001"
-    },
-    {
-      "id": "8986",
-      "cityName": "Sakassou",
-      "country": "Cote d'Ivoire",
-      "emoji": "CI",
-      "date": "2025-08-25T08:08:01.940Z",
-      "notes": "I met Drogba",
-      "position": {
-        "lat": "7.36246686553575",
-        "lng": "-5.383300781250001"
-      }
-    },
-    {
-      "id": "f7ac",
-      "cityName": "Kouroussa",
-      "country": "Guinea",
-      "emoji": "GN",
-      "date": "2025-08-25T08:08:48.490Z",
-      "notes": "fvnfv",
-      "position": {
-        "lat": "10.206813072484595",
-        "lng": "-9.975585937500002"
-      }
-    },
-    {
-      "id": "0249",
-      "cityName": "Kouroussa",
-      "country": "Guinea",
-      "emoji": "GN",
-      "date": "2025-08-25T08:08:48.490Z",
-      "notes": "fvnfv",
-      "position": {
-        "lat": "10.206813072484595",
-        "lng": "-9.975585937500002"
-      }
-    },
-    {
-      "id": "fc16",
-      "cityName": "Kouroussa",
-      "country": "Guinea",
-      "emoji": "GN",
-      "date": "2025-08-25T08:08:48.490Z",
-      "notes": "fvnfv",
-      "position": {
-        "lat": "10.206813072484595",
-        "lng": "-9.975585937500002"
-      }
-    },
-    {
-      "id": "866d",
-      "cityName": "Kouroussa",
-      "country": "Guinea",
-      "emoji": "GN",
-      "date": "2025-08-25T08:10:12.424Z",
-      "notes": "efefnkefnk",
-      "position": {
-        "lat": "10.206813072484595",
-        "lng": "-9.975585937500002"
-      }
-    },
-    {
-      "id": "b0a6",
-      "cityName": "Tambacounda",
-      "country": "Senegal",
-      "emoji": "SN",
-      "date": "2025-08-25T08:13:08.122Z",
-      "notes": "fhgjk",
-      "position": {
-        "lat": "13.581920900545857",
-        "lng": "-13.754882812500002"
-      }
-    },
-    {
-      "id": "749c",
-      "cityName": "Nizhnevartovsky District",
-      "country": "Russian Federation (the)",
-      "emoji": "RU",
-      "date": "2025-08-25T08:15:03.296Z",
-      "notes": "sdcfghjbkn",
-      "position": {
-        "lat": "62.103882522897884",
-        "lng": "78.39843750000001"
-      }
     }
   ]
 }

@@ -46,6 +46,7 @@ export type CitiesContextProps = {
   setCurrentCity: React.Dispatch<React.SetStateAction<CityProp | null>>;
   getCity: (id: string) => void;
   createCity: (newCity: NewCityProp) => void;
+  deleteCity: (id:string) => void;
 };
 
 export type ChangeCenterProps = {
