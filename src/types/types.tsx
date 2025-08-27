@@ -47,7 +47,7 @@ export type CitiesContextProps = {
   // setCurrentCity: React.Dispatch<React.SetStateAction<CityProp | null>>;
   getCity: (id: string) => void;
   createCity: (newCity: NewCityProp) => void;
-  deleteCity: (id:string) => void;
+  deleteCity: (id: string) => void;
 };
 
 export type ChangeCenterProps = {
@@ -69,11 +69,10 @@ export type NewCityProp = {
   date: string | Date;
   notes: string;
   position: {
-    lat: number | string |null;
+    lat: number | string | null;
     lng: number | string | null;
   };
 };
-
 
 export type CitiesStateProp = {
   cities: CityProp[];
@@ -90,3 +89,27 @@ export type CitiesActionProp =
   | { type: "city/deleted"; payload: string }
   | { type: "rejected"; payLoad: string };
 
+
+
+export type FAKE_USER_Prop = {
+  name: string;
+  email: string;
+  password: string;
+  avatar: string;
+}
+
+export type AuthInitialStateProp = {
+  user: null | FAKE_USER_Prop;
+  isAuthenticated: boolean;
+};
+
+export type AuthActionProp =
+  | { type: "login"; payLoad: FAKE_USER_Prop }
+  | { type: "logout";  };
+
+export type AuthContextProp = {
+  user: null | FAKE_USER_Prop;
+  isAuthenticated: boolean;
+  login: (email: string, password: string) => void;
+  logout: () => void;
+};
