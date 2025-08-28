@@ -19,7 +19,7 @@ const reducer = (state: AuthInitialStateProp, action: AuthActionProp) => {
     case "login":
       return { ...state, user: action.payLoad, isAuthenticated: true };
     case "logout":
-      return { ...state };
+      return { ...state, isAuthenticated: false };
     default:
       throw new Error("Unknown action");
   }

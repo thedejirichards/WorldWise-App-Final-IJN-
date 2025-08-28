@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import { useAuth } from "../contexts/FakeAuthContext";
 import styles from "./User.module.css";
+import { useNavigate } from "react-router-dom";
 
 // const FAKE_USER = {
 //   name: "Jack",
@@ -9,9 +11,16 @@ import styles from "./User.module.css";
 // };
 
 function User() {
-  const {user} = useAuth()
-  function handleClick() {}
-  if(!user) return null
+  const { user, logout, isAuthenticated } = useAuth();
+  const navigate = useNavigate();
+  function handleClick() {
+    logout();
+  }
+  useEffect(() => {
+    if (isAuthenticated === false) navigate("/");
+    if(!user) navigate("/") // Double authentication 😉
+  }, [isAuthenticated, navigate, user]);
+  if (!user) return null;
   return (
     <div className={styles.user}>
       <img src={user.avatar} alt={user.name} />
